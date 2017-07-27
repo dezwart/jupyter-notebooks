@@ -1,6 +1,6 @@
 SHELL = /bin/bash
 
-.PHONY: clean distclean
+.PHONY: clean distclean jupyter jupyter-list
 
 VE_DIR = ve
 
