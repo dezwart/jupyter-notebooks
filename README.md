@@ -18,6 +18,6 @@ Assumptions
 
 It is assumed the following are available for the virtual environment to work:
 
-* Python
+* Python3
 * Python pip & virtualenv
 * GNU Make
