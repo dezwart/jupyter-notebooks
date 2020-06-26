@@ -1,6 +1,6 @@
 SHELL = /bin/bash
 
-.PHONY: clean distclean jupyter jupyter-list
+.PHONY: clean distclean
 
 VE_DIR = ve
 
@@ -10,7 +10,7 @@ jupyter: $(ACTIVATE)
 	. $(ACTIVATE) && jupyter notebook
 
 $(ACTIVATE): requirements.txt
-	virtualenv --no-site-packages $(VE_DIR)
+	python3 -m venv $(VE_DIR)
 	$(VE_DIR)/bin/pip install --upgrade pip wheel
 	$(VE_DIR)/bin/pip install -r requirements.txt
 	touch $(ACTIVATE)
